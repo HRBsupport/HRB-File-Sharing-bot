@@ -25,13 +25,14 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     if data == "menu":
         await query.message.edit_text(
-            text = f"<b> ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ᴘxᴢᴛᴇᴀᴍ</a>\nꜱᴜᴘᴘᴏʀᴛ : <a href='https://t.me/PXZsupport'>ᴘxᴢᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ</a>\nꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ : <a href='https://t.me/PXZsupport_official'>ᴘxᴢᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ</a>\nꜱᴛᴏʀᴇ : <a href='https://t.me/PXZstore'>ᴘxᴢꜱᴛᴏʀᴇ </a></b>",
+            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 1', url='https://t.me/dammingyu'),
-                    InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 2', url='https://t.me/PXZteam')],
-                   [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HRBsupport')],
+                    [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
+                 InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
+              [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
+              InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
                 ]
