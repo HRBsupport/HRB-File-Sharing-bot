@@ -10,21 +10,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b> <b> ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ʜʀʙᴛᴇᴀᴍ</a>\nꜱᴜᴘᴘᴏʀᴛ : <a href='https://t.me/HRBsupport'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ</a>\nꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ : <a href='https://t.me/HRBsupport_official'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ</a>\nꜱᴛᴏʀᴇ : <a href='https://t.me/HRBstore_official'>ʜʀʙꜱᴛᴏʀᴇ </a></b>",
-           disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 1', url='https://t.me/dammingyu'),
-                    InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 2', url='https://t.me/Honorsteam')],
-                   [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HRBsupport')],
-                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
-                
-                ]
-            )
-        )
-
-    if data == "menubot":
-        await query.message.edit_text(
             text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ</b>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
@@ -34,6 +19,21 @@ async def cb_handler(client: Bot, query: CallbackQuery):
               [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
               InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")],
                     [InlineKeyboardButton("🌐 ᴡᴇʙꜱɪᴛᴇ ", url='https://px-z.blogspot.com')],
+                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
+                
+                ]
+            )
+        )
+
+    if data == "developer":
+        await query.message.edit_text(
+            text = f"<b> ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ʜʀʙᴛᴇᴀᴍ</a>\nꜱᴜᴘᴘᴏʀᴛ : <a href='https://t.me/HRBsupport'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ</a>\nꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ : <a href='https://t.me/HRBsupport_official'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ</a>\nꜱᴛᴏʀᴇ : <a href='https://t.me/HRBstore_official'>ʜʀʙꜱᴛᴏʀᴇ </a></b>",
+           disable_web_page_preview = True,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 1', url='https://t.me/dammingyu'),
+                    InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 2', url='https://t.me/Honorsteam')],
+                   [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HRBsupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
                 ]
