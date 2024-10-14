@@ -23,10 +23,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             )
         )
 
-    if data == "mensu":
+    if data == "menu":
         await query.message.edit_text(
             text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ</b>",
-            disable_web_page_preview = True,
+            disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
