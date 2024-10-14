@@ -23,7 +23,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             )
         )
 
-    if data == "menu":
+    if data == "menu_users":
         await query.message.edit_text(
             text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ</b>",
             disable_web_page_preview = True,
