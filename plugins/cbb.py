@@ -22,7 +22,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-elif data == "menu":
+elif data == "command":
         await query.message.edit_text(
             text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ",disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
