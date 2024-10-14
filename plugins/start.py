@@ -276,31 +276,18 @@ REPLY_ERROR = """<code>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴀꜱ ᴀ ʀ�
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    if FORCE_SUB_CHANNEL & FORCE_SUB_CHANNEL2:
-        buttons = [
+    buttons = [
         [
-            InlineKeyboardButton(
-                "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ🔓",
-                url=client.invitelink),
-            InlineKeyboardButton(
-                "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ🔓",
-                url=client.invitelink2),
-        ]
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2)],
+           
     ]
-    elif FORCE_SUB_CHANNEL:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ🔓",
-                    url=client.invitelink)
-            ]
-        ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text='ᴛʀʏ ᴀɢᴀɪɴ🔁',
-                    url=f"https://t.me/{client.username}?start={message.command[1]}"
+                    text = 'ᴛʀʏ ᴀɢᴀɪɴ',
+                    url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
         )
