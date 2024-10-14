@@ -22,9 +22,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-elif data == "command":
+elif data == "menu":
         await query.message.edit_text(
-            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ",disable_web_page_preview = True,
+            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ", 
+            disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
                  InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
