@@ -22,7 +22,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-elif data == "menu":
+elif data == "menu_bot":
         await query.message.edit_text(
             text = f"<b>DONATE - HRBFamily</b>\nJika kalian suka sama video yang kami bagikan secara gratis/bayaran, ingin berbagi (donasi) kepada PXZteam? Silahkan pilih via donasi\n If you like the videos we share for free/paid, want to share (donate) to PXZteam? Please choose via donation",
             disable_web_page_preview=True,
