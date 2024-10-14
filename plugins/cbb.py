@@ -8,17 +8,17 @@ from config import PRICE1, PRICE2, PRICE3, PRICE4, PRICE5, UPI_ID, UPI_IMAGE_URL
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "menu":
         await query.message.edit_text(
             text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ</b>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
-                 InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
-              [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
+                 InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data='promotion')],
+              [InlineKeyboardButton("🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ", callback_data='premium'),
               InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")],
-                    [InlineKeyboardButton("🌐 ᴡᴇʙꜱɪᴛᴇ ", url='https://px-z.blogspot.com')],
+                    [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ ', url='https://px-z.blogspot.com')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
                 ]
