@@ -218,8 +218,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 
-                    [InlineKeyboardButton("🪪 ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="developer")],
-                    [InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
+                    [InlineKeyboardButton("🪪 ᴀʙᴏᴜᴛ", callback_data="developer")],
+                    [InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data = "menu"),
                     
                     InlineKeyboardButton("🎁 ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
                 [InlineKeyboardButton('📣 ᴜᴘᴅᴀᴛᴇ ', url='https://t.me/HRBsupport_official')]
