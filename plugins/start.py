@@ -219,7 +219,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data= "menu"),
+                    InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data= "menu_users"),
                     InlineKeyboardButton("🎁 ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
                 [InlineKeyboardButton('📣 ᴜᴘᴅᴀᴛᴇ ', url='https://t.me/HRBsupport_official')]
                  
