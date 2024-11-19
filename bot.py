@@ -85,7 +85,7 @@ class Bot(Client):
             ADMINS.append(x)
         await self.send_message(
             chat_id=OWNER_ID,
-            text="Bot has started! 😉"
+            text="Robot is online nown/if have probelem contact team @honorsteam"
         )
 
 
