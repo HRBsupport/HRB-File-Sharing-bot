@@ -65,7 +65,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
           ],
                 [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://t.me/PXZsub_bot?start=Z2V0LTE5MjE1MjcwODc1MDY5MDg'),
-                InlineKeyboardButton('🧾 ᵀᴿᴬᴷᵀᴱᴱᴿ', url='https://trakteer.id/hrbofficial/tip')
+                InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
                 [  InlineKeyboardButton('🧾 ᴀʟɪᴘᴀʏ', url='https://t.me/PXZsub_bot?start=Z2V0LTE3NjcyNDM4OTA2OTk3ODQ')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
